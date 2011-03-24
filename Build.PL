@@ -19,13 +19,12 @@ my %module_build_args = (
     'Gea-Suan Lin <gslin@gslin.org>'
   ],
   'dist_name' => 'Mojolicious-Plugin-MarkaplRenderer',
-  'dist_version' => '0.1.0',
+  'dist_version' => '0.2.0',
   'license' => 'bsd',
   'module_name' => 'Mojolicious::Plugin::MarkaplRenderer',
   'recommends' => {},
   'recursive_test_files' => 1,
   'requires' => {
-    'Encode' => '0',
     'Mojo::Base' => '0'
   },
   'script_files' => []

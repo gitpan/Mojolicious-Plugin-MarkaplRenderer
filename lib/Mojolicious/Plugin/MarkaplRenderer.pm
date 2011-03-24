@@ -2,7 +2,7 @@
 
 package Mojolicious::Plugin::MarkaplRenderer;
 BEGIN {
-  $Mojolicious::Plugin::MarkaplRenderer::VERSION = '0.1.0';
+  $Mojolicious::Plugin::MarkaplRenderer::VERSION = '0.2.0';
 }
 use strict;
 use warnings;
@@ -13,7 +13,7 @@ Mojolicious::Plugin::MarkaplRenderer - Markapl template plugin for Mojolicious
 
 =head1 VERSION
 
-version 0.1.0
+version 0.2.0
 
 =head1 DESCRIPTION
 
@@ -54,8 +54,6 @@ This is L<Markapl> for L<Mojolicious>.
 
 use Mojo::Base 'Mojolicious::Plugin';
 
-use Encode;
-
 sub register {
     my ($self, $app, $conf) = @_;
 
@@ -69,7 +67,7 @@ sub register {
 	$name => sub {
 	    my ($r, $c, $output, $options) = @_;
 
-	    $$output = Encode::decode('utf8', $view_class->render($options->{template}, $c->{stash}));
+	    $$output = $view_class->render($options->{template}, $c->{stash});
 
 	    return 1;
 	}

@@ -16,9 +16,8 @@ meta-spec:
   version: 1.4
 name: Mojolicious-Plugin-MarkaplRenderer
 requires:
-  Encode: 0
   Mojo::Base: 0
 resources:
   homepage: https://github.com/gslin/mojolicious-plugin-markaplrenderer-perl
   repository: https://github.com/gslin/mojolicious-plugin-markaplrenderer-perl.git
-version: 0.1.0
+version: 0.2.0

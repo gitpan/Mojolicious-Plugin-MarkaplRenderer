@@ -24,10 +24,9 @@ my %WriteMakefileArgs = (
   'LICENSE' => 'bsd',
   'NAME' => 'Mojolicious::Plugin::MarkaplRenderer',
   'PREREQ_PM' => {
-    'Encode' => '0',
     'Mojo::Base' => '0'
   },
-  'VERSION' => '0.1.0',
+  'VERSION' => '0.2.0',
   'test' => {
     'TESTS' => 't/*.t'
   }
